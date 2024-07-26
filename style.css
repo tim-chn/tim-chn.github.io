@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -8,8 +8,7 @@ body {
 }
 
 header {
-    background-color: #192857;
-    color: white;
+    color: #192857;
     text-align: center;
     padding: 1em 0;
 }
@@ -20,7 +19,6 @@ header h1 {
 }
 
 main {
-    padding: 2em;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -29,6 +27,24 @@ main h2 {
     color: #192857;
     font-size: 1.5em;
     margin-bottom: 0.5em;
+}
+
+main .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main .about-content img {
+    margin-right: 20px;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+main .about-content p {
+    margin: 0;
+    flex: 1;
 }
 
 main p {
@@ -53,4 +69,12 @@ footer a img {
     width: 1.25em;
     height: 1em;
     margin-right: 0.5em;
+}
+
+main b {
+    color: #192857
+}
+main #career-updates a {
+    color: #192857;
+    font-weight: bold;
 }
