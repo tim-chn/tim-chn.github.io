@@ -1,54 +1,111 @@
+/* CSS: style.css */
+
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-    color: #192857;
-    text-align: center;
-    padding: 1em 0;
+    text-align: left;
+    padding: 1.5em;
+    border-bottom: 1px solid var(--border-color);
 }
 
 header h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--header-text-color);
     margin: 0;
-    font-size: 2em;
+}
+
+header .highlight {
+    color: #FF8C00; /* Inspired by the orange in your image */
+}
+
+header nav {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 1em;
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+header nav a:hover {
+    color: var(--link-hover-color);
+}
+
+header #theme-toggle {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-icon {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 2em auto;
+    padding: 0 1.5em;
 }
 
-main h2 {
-    color: #192857;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+#about {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.25em;
+    color: var(--text-color);
 }
 
-main .about-content {
+.about-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
-main .about-content img {
+.about-content img {
+    width: 300px;
+    height: auto;
+    max-height: 200px; /* Ensures height matches text */
+    border-radius: 8px;
     margin-right: 20px;
-    width: 220px;
-    height: 220px;
     object-fit: cover;
+    object-position: 15% 70%;
 }
 
-main .about-content p {
-    margin: 0;
-    flex: 1;
+.highlight {
+    color: #FF8C00;
+    font-weight: 700;
 }
 
-main p {
-    margin-bottom: 1.5em;
+#work h2 {
+    font-size: 1.5em;
+    color: #FF8C00;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.3em;
+    margin-top: 1.5em;
+}
+
+.work-list {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+    margin-top: 1em;
+    color: var(--text-color);
+}
+
+.work-item {
+    margin: 0.5em 0;
 }
 
 footer {
@@ -56,25 +113,49 @@ footer {
     padding: 1em 0;
 }
 
-footer a {
+.footer-links a {
     margin: 0 1em;
-    color: #192857;
+    color: var(--footer-link-color);
     text-decoration: none;
     font-size: 1em;
     display: inline-flex;
     align-items: center;
 }
 
-footer a img {
+.footer-links a img {
     width: 1.25em;
     height: 1em;
     margin-right: 0.5em;
 }
 
-main b {
-    color: #192857
+footer p {
+    color: var(--text-muted-color);
+    margin-top: 0.5em;
 }
-main #career-updates a {
-    color: #192857;
-    font-weight: bold;
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #333;
+    --header-text-color: #000;
+    --border-color: #e0e0e0;
+    --link-color: #FF8C00;
+    --link-hover-color: #000;
+    --footer-link-color: #192857;
+    --text-muted-color: #666;
+}
+
+body.dark-mode {
+    --background-color: #1A1A1A;
+    --text-color: #EDEDED;
+    --header-text-color: #FFFFFF;
+    --border-color: #333;
+    --link-color: #FF8C00;
+    --link-hover-color: #FFFFFF;
+    --footer-link-color: #FF8C00;
+    --text-muted-color: #AAAAAA;
+}
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; /* Adds more space between projects */
 }

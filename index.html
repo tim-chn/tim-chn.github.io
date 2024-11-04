@@ -3,61 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothy Chen</title>
+    <title>Timothy Chen - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=IBM+Plex+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Timothy Chen</h1>
+        <h1><span class="highlight">Timothy</span> Chen</h1>
+        <nav>
+            <a href="#about">about</a>
+            <a href="projects.html">projects</a>
+            <button id="theme-toggle">
+                <img src="sun-icon.png" alt="Toggle Dark Mode" class="theme-icon">
+            </button>
+        </nav>
     </header>
 
     <main>
         <section id="about">
-            <h2>About</h2>
             <div class="about-content">
                 <img src="me.jpg" alt="Timothy Chen">
-                <p>
-                    Hi, I'm Timothy, a student and software engineer. I'm most interested in the applications of data in software development, analytics, and ML/AI. <br/><br/>
-
-                    I've compiled a list of my projects and achievements throughout my early career below.<br/><br/>
-
-                    I'd be happy to connect! You can email me at <a href="mailto:timothy.chen5@pepperdine.edu">timothy.chen5@pepperdine.edu</a>.
+                <div>
+                    <p>
+                        Hi, I'm Timothy, a student and software engineer. I'm most interested in the applications of data in software development, analytics, and ML/AI. <br><br>
+                        Let's connect! Reach me at <a class="highlight" href="mailto:timothy.chen5@pepperdine.edu"><span class="highlight">timothy.chen5@pepperdine.edu</span></a>.
+                    </p>
+                </div>
             </div>
         </section>
-        
+
         <section id="career-updates">
-            <h2>My Work</h2>
-            <ul>
-                <li><strong>[05/2024]</strong> Joined <b>Amazon</b> as a data engineering intern on the <b>Alexa Enterprise</b> team in Seattle, WA</li>
-                <li><strong>[01/2024]</strong> Joined <a href="https://ensa.ai/" target="blank">ensa.ai</a> as a part time MLE intern, building a video processing computer vision pipeline</li>
-                <li><strong>[12/2023]</strong> <a href="https://digitalcommons.pepperdine.edu/scursas/2024/posters/2/" target="blank">Paper</a> on autonomous RC cars in kinetic art published with funding from the <b>AYURI grant</b></li>
-                <li><strong>[08/2023]</strong> Returned to Pepperdine University's internal app development team. Owned development for the rework of <a href="https://esign.pepperdine.edu/" target="blank">esign.pepperdine.edu</a>.</li>
-                <li><strong>[07/2023]</strong> Awarded the <b>Northrop Grumman Endowed Scholarship</b> for excellence in engineering</li>
-                <li><strong>[07/2023]</strong> <a href="https://seaver.pepperdine.edu/newsroom/articles/7-10-23-chen-isapa.htm" target="blank">Article</a> written about me by Pepperdine University's official Seaver Newsroom</li>
-                <li><strong>[06/2023]</strong> Oral presentation of research at the <b>ISAPA '23</b> held in Dunedin, New Zealand</li>
-                <li><strong>[05/2023]</strong> Joined <b>Samsung</b> as a software engineer intern on the data intelligence team in Austin, TX</li>
-                <li><strong>[04/2023]</strong> <a href="Clustering_Application_Project.pdf" target="blank">Paper</a> on language processing</a> for research publications</li>
-                <li><strong>[04/2023]</strong> Placing in my first hackathon at the CTG Hackathon hosted by <b>Morgan Stanley</b></li>
-                <li><strong>[12/2022]</strong> <a href="CV_Plant_Cell_Detection.pdf" target="blank">Paper</a> on deep learning for ecology applications</li>
-                <li><strong>[11/2022]</strong> Presented research at the <b>SCURR '22</b> at Pepperdine University</li>
-                <li><strong>[08/2022]</strong> Joined Pepperdine University's internal app development team as a part time software developer. Owned development for <a href="https://sso.pepperdine.edu/" target="blank">sso.pepperdine.edu</a>.</li>
-                <li><strong>[08/2022]</strong> Teaching Assistant for <a href="https://seaver.pepperdine.edu/academics/faculty/stan-warford/" target="blank">Dr. Stan Warford</a> for <b>5 semesters</b></li>
-                <li><strong>[07/2022]</strong> Awarded Keck Data Science Grant for significant research contribution</li>
-                <li><strong>[07/2022]</strong> Awarded the <b>Darnell Scholarship</b> by computer science faculty</li>
-                <li><strong>[05/2022]</strong> Began summer research with the <b>Keck Data Science Institute</b> at Pepperdine University on big data and artificial intelligence</li>
-                <!-- Add more updates as needed -->
+            <h2>Career Highlights</h2>
+            <div class="work-list">
+                <div class="work-item">
+                    <strong> [10/2024] </strong> Joined the <b>a16z</b> <a href="https://a16z.com/connect/college-talent/" target="blank">College Talent Network </a>
+                </div>
+                <div class="work-item">
+                    <strong>[08/2024]</strong> Awarded the <b>Edison Scholarship</b> by natural science faculty
+                </div>
+                <div class="work-item">
+                    <strong>[05/2024]</strong> Joined <b>Amazon</b> as a data engineering intern on the <b>Alexa Enterprise</b> team in Seattle, WA
+                </div>
+                <div class="work-item">
+                    <strong>[01/2024]</strong> Joined <a href="https://ensa.ai/" target="_blank">ensa.ai</a> as a part-time MLE intern, building a video processing computer vision pipeline
+                </div>
+                <div class="work-item">
+                    <strong>[12/2023]</strong> <a href="https://digitalcommons.pepperdine.edu/scursas/2024/posters/2/" target="_blank">Paper</a> on autonomous RC cars in kinetic art published with funding from the <b>AYURI grant</b>
+                </div>
+                <div class="work-item">
+                    <strong>[08/2023]</strong> Returned to Pepperdine University's internal app development team. Owned development for the rework of <a href="https://esign.pepperdine.edu/" target="_blank">esign.pepperdine.edu</a>.
+                </div>
+                <div class="work-item">
+                    <strong>[07/2023]</strong> Awarded the <b>Northrop Grumman Endowed Scholarship</b> for excellence in engineering
+                </div>
+                <div class="work-item">
+                    <strong>[07/2023]</strong> <a href="https://seaver.pepperdine.edu/newsroom/articles/7-10-23-chen-isapa.htm" target="_blank">Article</a> written about me by Pepperdine University's official Seaver Newsroom
+                </div>
+                <div class="work-item">
+                    <strong>[06/2023]</strong> Oral presentation of research at the <b>ISAPA '23</b> held in Dunedin, New Zealand
+                </div>
+                <div class="work-item">
+                    <strong>[05/2023]</strong> Joined <b>Samsung</b> as a software engineer intern on the data intelligence team in Austin, TX
+                </div>
+                <div class="work-item">
+                    <strong>[04/2023]</strong> <a href="Clustering_Application_Project.pdf" target="_blank">Paper</a> on language processing for research publications
+                </div>
+                <div class="work-item">
+                    <strong>[04/2023]</strong> Placing in my first hackathon at the CTG Hackathon hosted by <b>Morgan Stanley</b>
+                </div>
+                <div class="work-item">
+                    <strong>[12/2022]</strong> <a href="CV_Plant_Cell_Detection.pdf" target="_blank">Paper</a> on deep learning for ecology applications
+                </div>
+                <div class="work-item">
+                    <strong>[11/2022]</strong> Presented research at the <b>SCURR '22</b> at Pepperdine University
+                </div>
+                <div class="work-item">
+                    <strong>[08/2022]</strong> Joined Pepperdine University's internal app development team as a part-time software developer. Owned development for <a href="https://sso.pepperdine.edu/" target="_blank">sso.pepperdine.edu</a>.
+                </div>
+                <div class="work-item">
+                    <strong>[08/2022]</strong> Teaching Assistant for <a href="https://seaver.pepperdine.edu/academics/faculty/stan-warford/" target="_blank">Dr. Stan Warford</a> for <b>5 semesters</b>
+                </div>
+                <div class="work-item">
+                    <strong>[07/2022]</strong> Awarded Keck Data Science Grant for significant research contribution
+                </div>
+                <div class="work-item">
+                    <strong>[07/2022]</strong> Awarded the <b>Darnell Scholarship</b> by computer science faculty
+                </div>
+                <div class="work-item">
+                    <strong>[05/2022]</strong> Began summer research with the <b>Keck Data Science Institute</b> at Pepperdine University on big data and artificial intelligence
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <a href="https://www.linkedin.com/in/timochen" target="_blank">
-            <img src="linkedin-icon.png" alt="LinkedIn">
-            LinkedIn
-        </a>
-        <a href="Timothy Chen Resume.pdf" target="_blank">
-            <img src="resume-icon.png" alt="Resume">
-            Resume
-        </a>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/timochen" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="Timothy Chen Resume.pdf" target="_blank">
+                <img src="resume-icon.png" alt="Resume"> Resume
+            </a>
+        </div>
+        <p>&copy; 2024 Timothy Chen</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
