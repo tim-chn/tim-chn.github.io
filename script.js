@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.remove('dark-mode');
         themeIcon.src = 'sun-icon.png';
         resumeIcon.src = 'resume-icon.png'; 
-
+    }
     document.getElementById('theme-toggle').addEventListener('click', function () {
         body.classList.toggle('dark-mode');
         
