@@ -80,6 +80,16 @@
         <p>&copy; 2024 Timothy Chen</p>
     </footer>
 
+    <script>
+        const PROJECTS_ENABLED = false; // feature flag
+
+        if (!PROJECTS_ENABLED) {
+            document.querySelector('.project-list').style.display = 'none';
+            const msg = document.createElement('p');
+            msg.textContent = 'Projects page is currently in progress. Check back soon!';
+            document.querySelector('#projects').appendChild(msg);
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
